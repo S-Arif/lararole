@@ -1,0 +1,26 @@
+{
+    "name": "Ge/Lararole",
+    "description": "\"User Roles and permissions for the system\"",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Syed Arif Iqbal",
+            "email": "arifiqbal@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Ge\\Lararole\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ge\\Lararole\\LararoleServiceProvider"
+            ]
+        }
+    }
+}

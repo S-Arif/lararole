@@ -19,8 +19,11 @@ class LararoleServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/views' => resource_path('views/vendor/lararole'),
+        ], 'views');
+
+        $this->publishes([
             __DIR__.'/database/migrations' => database_path('migrations'),
-        ]);
+        ], 'migration');
     }
 
     /**
